@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample UCD Lecture Slides</title>
+
+    <meta charset="utf-8">
+<link href="style_ucd.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle, titlepage
+
+.opening_title[Introduction, History, and GDP]
+
+.opening_normal[EC101 Principles of Modern Monetary Theory]
+
+.opening_big[Dr Enda Hargaden]
+
+.opening_normal[Semester 2, 2023]
+
+
+.logoshrink[![University Logo](logo_ucd.png)]
+.bottombit[]
+---
+
+## This is a course about .hl[living standards]
+
+Hello,  this is normal text.
+
+---
+
+# Agenda for the next lectures
+
+1. What this module is, and what it isn't
+1. What macroeconomics is, and what it isn't
+1. A history of living standards
+1. Institutions and Capitalism
+1. An overview of the Irish economy
+1. Breaking the Malthusian Trap.
+
+
+(View the source code to see how to make numbered lists like this.)
+
+---
+
+## It is also very easy to make bullet points
+
+* What this module is, and what it isn't
+* What macroeconomics is, and what it isn't
+* A history of living standards
+* Institutions and Capitalism
+* An overview of the Irish economy
+* Breaking the Malthusian Trap.
+
+(Have you noticed the progress bar on the bottom yet?)
+
+
+---
+
+# You can do big reveals in slides
+
+--
+
+A simple "dash-dash" in your code 
+--
+results 
+--
+in 
+--
+an illusion 
+--
+of the big reveal.
+
+--
+
+Great to emphasize something of import.
+
+---
+
+
+class: inverse
+
+.slide-in-right[
+# Pretty cool
+]
+
+---
+class: inverse
+
+.slide-in-left[
+# A gimmick to break things up a little
+]
+
+---
+
+## Try getting the _Countdown_ theme in beamer
+
+
+Which country has comparative advantage in coffee?
+
+|  | Production Possibilities |
+|--|-- |
+| Indonesia | 640 phones **or** 2000 cups of coffee |
+| Colombia  | 890 phones **or** 1800 cups of coffee |
+
+.center[<audio controls><source src="countdown.mp3" type="audio/mpeg"></audio>]
+
+---
+
+class: inverse
+
+# These alerts are a good way to break up the slides.
+
+---
+
+# UCD has a branding guideline
+
+And this guidline has favourite colours.
+
+These can be used very easily. .color1[Very easily.] .color2[Very easily.] 
+--
+.color3[Very easily.] .color4[Very easily.] .color5[Very easily.]
+
+---
+
+# It is easy to include small images
+
+.img300[![Good idea to have some text here to identify the picture](daron.jpg)]
+---
+
+# It is easy to include big images
+
+.img500[![Good idea to have some text here to identify the picture](daron.jpg)]
+
+---
+
+## This slide has a nice split-screen approach 
+
+.pull-left[
+This text can explain the elements on the right.
+
+That is, to the extent that anyone can explain him.
+]
+.pull-right[
+![Daron Acemoglu](daron.jpg)
+]
+
+---
+
+## This slide has a nice split-screen approach 
+
+.split-left[
+Sometimes it is useful to adjust the relative widths of the left- and right-splits in case you have text that runs on too long, for example if you are including a paper abstract and want to include the face of the person as well. I believe there is evidence that including an author's photo next to a description of their work makes it more memorable for the students.
+]
+.split-right[
+![Daron Acemoglu](daron.jpg)
+]
+---
+
+class: inverse
+
+.reveal-text[ I still think this is cool]
+
+---
+
+## Could Portugal benefit from trading with an inferior nation?
+
+--
+
+## **YES!**
+
+--
+
+Suppose England spends all its time on shirts, and .green[Portugal] spends 90% of its resources on wine.
+
+--
+
+England produces 1000 shirts and 0 wine. Portugal produces 120 shirts and 45 litres of wine. .hl[(Why?)]
+
+--
+
+Then there is 1,120 shirts total and 45 litres of wine.
+
+--
+That's more of **both goods**!
+
+---
+
+### This also allows math in our favourite markup language
+
+$$ -b \pm \sqrt{ \frac{b^2 - 4ac}{2a}} $$
+
+And with confidence:
+
+$$ CI = \bar{x} \pm 1.96 \times se/\sqrt{n} $$
+
+---
+
+## It is very easy to incorporate videos
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xUf5cIUV6DY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+---
+### And, if we want, interactive graphs
+
+<iframe src="dynamic_img.html" width="100%" height="500px" style="border: none" />
+
+---
+# HTML has lots of little bits that are useful.
+
+I don't just mean **bold**, _italic_, or .u[underlined] text.
+
+<details><summary>.color3[Click me for an example]</summary>GDP is the sum of all value-added in an economy &#128512;</details>
+
+Keep it interactive.
+
+    </textarea>
+<script src="http://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript"></script>
+    <script>
+      var slideshow = remark.create({slideNumberFormat: (current, total) => `
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: ${current/total*100}%">
+          </div>
+        </div>
+      `, ratio: "16:9"});
+    </script>
+
+
+    <script src='https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML' type="text/javascript"></script>
+    <script type="text/javascript">
+
+      // Setup MathJax
+      MathJax.Hub.Config({
+          tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+          }
+      });
+      MathJax.Hub.Queue(function() {
+          $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+              return(elem.SourceElement());
+          }).parent().addClass('has-jax');
+      });
+
+
+      MathJax.Hub.Configured();
+    </script>
+
+  </body>
+</html>
